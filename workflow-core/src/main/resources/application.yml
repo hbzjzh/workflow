@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.206.20.189:29083/workflow?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&nullCatalogMeansCurrent=true
+    username: root
+    password: mysql8
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  activiti:
+    database-schema-update: true
+    db-history-used: true
+    history-level: audit
